@@ -1,3 +1,4 @@
+package q1;
 public class ShortTerm implements Contract {
     private String contractID;
     private double rentAmount;

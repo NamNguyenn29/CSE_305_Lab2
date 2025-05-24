@@ -1,3 +1,4 @@
+package q1;
 public class LongTerm implements Contract {
     private String contractID;
     private String propertyID;

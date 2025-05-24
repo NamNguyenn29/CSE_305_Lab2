@@ -1,3 +1,7 @@
+package q1;
+
+import java.util.Scanner;
+
 public class Client {
 
     public void requestCreateRentalContract(Contract builder) {
@@ -5,4 +9,5 @@ public class Client {
         Contract contract = builder.signContract();
         System.out.println(contract);
     }
+
 }
