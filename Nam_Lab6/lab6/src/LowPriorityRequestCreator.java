@@ -5,9 +5,5 @@ public class LowPriorityRequestCreator implements RequestCreator {
         return new LowPriorityConcrete();
     }
 
-    @Override
-    public void proceedRequest() {
-        createRequest().processReques();
-    }
 
 }

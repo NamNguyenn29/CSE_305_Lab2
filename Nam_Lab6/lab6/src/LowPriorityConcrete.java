@@ -8,23 +8,8 @@ public class LowPriorityConcrete extends RequestProduct {
 
     @Override
     public void processReques() {
-        System.out.println(super.priority + " " + super.expireDay + " " + super.status);
+        System.out.println(super.getPriority() + " " + super.getExpireDay() + " " + super.getStatus());
         System.out.println("Request Denied");
-    }
-
-    @Override
-    public void setPriority(String priority) {
-        super.priority = priority;
-    }
-
-    @Override
-    public void setExpireDay(String expireDay) {
-        super.expireDay = expireDay;
-    }
-
-    @Override
-    public void setStatus(String status) {
-       super.status = status;
     }
 
 }

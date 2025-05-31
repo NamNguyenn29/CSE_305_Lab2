@@ -1,6 +1,8 @@
 public interface RequestCreator {
     public RequestProduct createRequest();
 
-    public void proceedRequest();
+    public default void proceedRequest() {
+        createRequest().processReques();
+    }
 
 }

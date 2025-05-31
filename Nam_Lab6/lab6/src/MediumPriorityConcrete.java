@@ -1,27 +1,16 @@
 public class MediumPriorityConcrete extends RequestProduct {
-    
+
+    public MediumPriorityConcrete() {
+        setPriority("Medium");
+        setExpireDay("30-6-2025");
+        setStatus("Accepted");
+    }
+
     @Override
     public void processReques() {
-        System.out.println(super.priority + " " + super.expireDay + " " + super.status);
+        System.out.println(super.getPriority() + " " + super.getExpireDay() + " " + super.getStatus());
         System.out.println("Request accept, estimated\r\n" + //
-                "completion date is " + super.expireDay);
+                "completion date is " + super.getExpireDay());
     }
 
-    @Override
-    public void setPriority(String priority) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setPriority'");
-    }
-
-    @Override
-    public void setExpireDay(String expireDay) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setExpireDay'");
-    }
-
-    @Override
-    public void setStatus(String status) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
-    }
 }

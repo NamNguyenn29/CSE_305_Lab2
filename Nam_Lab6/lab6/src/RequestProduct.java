@@ -1,21 +1,37 @@
 public abstract class RequestProduct {
 
-    protected String priority;
-    protected String expireDay;
-    protected String status;
+    private String priority;
+    private String expireDay;
+    private String status;
 
-    public abstract void setPriority(String priority);
+    public String getPriority() {
+        return priority;
+    }
 
-    public abstract void setExpireDay(String expireDay);
+    public void setPriority(String priority) {
+        this.priority = priority;
+    }
 
-    public abstract void setStatus(String status);
+    public String getExpireDay() {
+        return expireDay;
+    }
+
+    public void setExpireDay(String expireDay) {
+        this.expireDay = expireDay;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public void processReques() {
     }
 
     public RequestProduct() {
     };
-
-    
 
 }
